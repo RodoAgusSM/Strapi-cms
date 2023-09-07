@@ -1,0 +1,52 @@
+{
+    "kind": "collectionType",
+    "collectionName": "company_infos",
+    "info": {
+        "singularName": "company-info",
+        "pluralName": "company-infos",
+        "displayName": "CompanyInfo",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "Name": {
+            "type": "string",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "Description": {
+            "type": "richtext",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "Photo": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
+        }
+    }
+}
